@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nostra</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- tailwind css connection link -->
+    <!-- Tailwind CSS cdn link from jsdeliver.com -->
+
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: "Poppins", serif;
+        }
+    </style>
+</head>
+
+<body class="box-border">
+    <!-- ad section -->
+    <div class="bg-black
+     top-0 flex
+      justify-center
+       gap-16
+       text-xs
+       pt-3 pl-5 pr-5 pb-3
+       text-gray-200
+        md:text-xl" id="ad_close_section">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first Order</p>
+        <p class="cursor-pointer" id="ad_close_btn">X</p>
+    </div>
+    <!-- whole section -->
+    <div class="pl-4 pr-4">
+        <!-- navbar section -->
+        <div class="mt-2 mb-2 z-10 sticky top-0 bg-white p-2">
+            <nav class="flex
+            justify-between 
+            items-center
+            top-0 
+            sticky
+            gap-5">
+                <h1 class="font-extrabold text-2xl">Nostra</h1>
+
+                <!-- mennu icon -->
+                <!-- menu icon from heroicons -->
+                <div class="flex justify-start m-5 " id="menu_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="menu_icon" class=" h-5 w-5 pointer md:hidden"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="cursor: pointer;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </div>
+
+
+                <!-- navbar links -->
+                <section class="md:flex gap-10 hidden pr-10">
+                    <a href="#" class="hover:underline" target="_blank">Home</a>
+                    <a href="" class="hover:underline" id="new_arrival">New Arrival</a>
+                    <a href="" class="hover:underline">Most Wanted</a>
+                    <a href="./collections.html" class="hover:underline" target="_blank">Collections</a>
+                    <a href="./contact.html" class="hover:underline" target="_blank">Contact Us</a>
+                </section>
+            </nav>
+        </div>
+
+        <!-- side navbar  -->
+        <div id="side_navbar" class="hidden">
+            <!-- navbar links -->
+
+            <section class=" h-screen p-10
+            fixed z-10 bg-gray-800 
+            text-white top-0 left-0" style="width:60%;">
+                <!-- close btn -->
+                <h1 class="cursor-pointer ml-56" id="side_navbar_close">X</h1>
+                <!-- links -->
+                <div class="flex text-xl flex-col gap-10 ">
+                    <a href="#" class="hover:underline">Home</a>
+                    <a href="" class="hover:underline">New Arrival</a>
+                    <a href="" class="hover:underline">Most Wanted</a>
+                    <a href="./collections.html" class="hover:underline" target="_blank">Collections</a>
+                    <a href="./contact.html" class="hover:underline" target="_blank">Contact Us</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- slider section -->
+
+        <div class=" relative flex bg-black h-52 md:h-96" style="width:100%;overflow:hidden; border-radius: 5px;">
+
+            <!-- slider left arrow sec -->
+            <section class=" cursor-pointer absolute text-white font-extrabold text-9xl  " style="top:35%; left:7%;"
+                id="slider_left_arrow">
+                <i class="fa-solid fa-angle-left"></i>
+
+            </section>
+            <!-- image container -->
+            <section id="image_container" class="flex"
+                style="opacity: 0.2;margin-left: -200v;transition: 2s;overflow:auto;">
+                <img src="./images/slider image 1.jpg" alt="shirt image" style="width:100%;">
+                <img src="./images/slider image 2.jpg" alt="shirt image">
+                <img src="./images/slider image 3.jpg" alt="style shirt image">
+            </section>
+            <!-- slider container-->
+            <section class=" text-white absolute flex flex-col items-center justify-between gap-3"
+                style="width:100%;text-align: center;top:20%;">
+                <h1 class="text-3xl font-extrabold md:text-6xl">Level up your style with our</h1>
+                <p class="text=xl font-extrabold">Summer Collections</p>
+        
+        <p class="p-2 bg-gray-200 hover:bg-gray-300 hover:transition-2s text-black w-32 ">Shop Now<span>
+        <i class="fa-solid fa-arrow-right"></i>
+        </span></p>
+            </section>
+            <!-- slider right arrow sec -->
+            <section class="absolute text-white font-extrabold text-9xl cursor-pointer" style="top:35%; right:7%;"
+                id="slider_left_arrow">
+
+                <i class="fa-solid fa-angle-right"></i>
+            </section>
+
+
+            <!-- icons -->
+            <!-- 
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-address-book"></i> -->
+
+        </div>
+        <!-- brands section -->
+        <div class="mt-16 mb-10 ">
+            <h1 class="font-extrabold text-2xl mb-10">Brands</h1>
+            <!-- icons section -->
+            <section class="flex justify-around text-xs md:text-2xl">
+                <div class="flex items-center flex-col flex-wrap  ">
+                    <img src="./images/adidas.png" alt="addidas logo" class="w-11">
+                    <p>Adidas</p>
+                </div>
+                <div class="flex items-center flex-col">
+                    <img src="./images/big.png" alt="loyal logo" class="w-11">
+                    <p>Loyal</p>
+                </div>
+                <div class="flex items-center flex-col">
+                    <img src="./images/leaves.png" alt="" class="w-11">
+                    <p>Leaves</p>
+                </div>
+                <div class="flex items-center flex-col">
+                    <img src="./images/twitch.png" alt="" class="w-11">
+                    <p>Twitch</p>
+                </div>
+                <div class="flex items-center flex-col">
+                    <img src="./images/social.png" alt="" class="w-11">
+                    <p>Social</p>
+                </div>
+                <div class="flex items-center flex-col">
+                    <img src="./images/adidas.png" alt="" class="w-11">
+                    <p>adidas</p>
+                </div>
+                <div class="flex items-center flex-col">
+                    <img src="./images/big.png" alt="" class="w-11">
+                    <p> Big</p>
+                </div>
+            </section>
+        </div>
+        <!-- We provide section -->
+        <div>
+            <!-- headings -->
+            <section class=" mb-5 flex justify-between text-xs md:text-2xl">
+                <p class="font-bold">We Provide Best<br>
+                    Customer Experiences</p>
+                <p>|| We ensure that our customer have the best shopping experience</p>
+            </section>
+
+            <div class="flex justify-around">
+                <section class="text-xs bg-gray-200 rounded-md p-3 md:text-xl" style="width: 20%;">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <br><br>
+                    <p><b>Original Products</b><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntu</p>
+                </section>
+                <section class="text-xs bg-gray-200 rounded-md p-3 md:text-xl" style="width: 20%;">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <br><br>
+                    <p><b>Satisfaction Guarantee
+                        </b><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntu</p>
+                </section>
+                <section class="text-xs bg-gray-200 rounded-md p-3 md:text-xl" style="width: 20%;">
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <br><br>
+                    <p><b>New Arrival Everyday</b><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntu</p>
+                </section>
+                <section class="text-xs bg-gray-200 rounded-md p-3 md:text-xl" style="width: 20%;">
+                    <i class="fa-solid fa-truck"></i>
+                    <br><br>
+                    <p><b>Fast & Free Shipping</b><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntu</p>
+                </section>
+            </div>
+        </div>
+        <!-- New arrivals section -->
+        <div class="mt-5" id="new_arrival_section">
+            <!-- heading -->
+            <h1 class="font-extrabold text-2xl">New Arrivals</h1>
+            <!-- image container -->
+            <section class="mt-5 flex gap-5 " id="new_arrival_container">
+                <!-- image -->
+                <div class="relative bg-black h-24 md:h-full">
+                    <img src="./images/f1.jpg" class="opacity-30 " style="height:fit-content;width:fit-content;">
+                    <p class=" text-xs
+                     md:text-xl 
+                     p-2 rounded-xl 
+                     bg-gray-200 
+                     absolute 
+                     top-5 
+                     left-1 
+                    
+                     md:left-20 md:top-20">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                </div>
+                <!-- image -->
+                <div class="relative bg-black h-24 md:h-full">
+                    <img src="./images/n1.jpg" class="opacity-30 " style="height:fit-content;width:fit-content;">
+                    <p
+                        class=" text-xs md:text-xl p-2 rounded-xl bg-gray-200 absolute top-5 left-1 md:left-20 md:top-20">
+                        Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                </div>
+                <!-- image -->
+                <div class="relative bg-black h-24 md:h-full">
+                    <img src="./images/f1.jpg" class="opacity-30 " style="height:fit-content;width:fit-content;">
+                    <p
+                        class=" text-xs md:text-xl p-2 rounded-xl bg-gray-200 absolute top-5 left-1 md:left-20 md:top-20">
+                        Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                </div>
+                <!-- image -->
+                <div class="relative bg-black h-24 md:h-full">
+                    <img src="./images/n1.jpg" class="opacity-30 " style="height:fit-content;width:fit-content;">
+                    <p
+                        class=" text-xs md:text-xl p-2 rounded-xl bg-gray-200 absolute top-5 left-1 md:left-20 md:top-20">
+                        Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                </div>
+
+            </section>
+        </div>
+        <!-- most wanted section -->
+        <div class="mt-5 overflow-hidden " style="width:100%;">
+            <!-- heading -->
+            <h1 class="font-extrabold text-2xl mb-5 ">Most Wanted</h1>
+            <!-- image container -->
+            <section class="flex items-center justify-around flex-nowrap gap-5 relative"
+                style="width:100vw; scrollbar-width: none; overflow: auto; ">
+                <!-- image -->
+                <div class="relative" style="width:100%;">
+                    <p class="pl-2 pr-2 bg-red-500 text-white absolute ">Sale</p>
+                    <img src="./images/f1.jpg" class="" style="width:fit-content;">
+                    <img src="./images/blackheart.png" class="absolute w-5 bottom-5 right-0">
+                </div>
+                <!-- image -->
+                <div class="relative" style="width:100%;">
+                    <p class="pl-2 pr-2 bg-red-500 text-white absolute ">Sale</p>
+                    <img src="./images/f2.jpg" class="" style="width:fit-content;">
+                    <img src="./images/blackheart.png" class="absolute w-5 bottom-5 right-0">
+                </div>
+                <!-- image -->
+                <div class="relative" style="width:100%;">
+                    <p class="pl-2 pr-2 bg-red-500 text-white absolute ">Sale</p>
+                    <img src="./images/f3.jpg" class="" style="width:fit-content;">
+                    <img src="./images/blackheart.png" class="absolute w-5 bottom-5 right-0">
+                </div>
+                <!-- image -->
+                <div class="relative" style="width:100%;">
+                    <p class="pl-2 pr-2 bg-red-500 text-white absolute ">Sale</p>
+                    <img src="./images/f4.jpg" class="" style="width:fit-content;">
+                    <img src="./images/blackheart.png" class="absolute w-5 bottom-5 right-0">
+                </div>
+
+            </section>
+        </div>
+        <!-- limited offer section -->
+        <div class="mt-5 mb-5">
+            <section class="bg-gray-900 p-5 flex  gap-5 
+            items-center md:h-96">
+                <img src="./images/offer.jpg" class="w-72 md:w-5/12 ">
+                <div class="text-white flex flex-col items-start gap-3">
+                    <h1 class=" font-extrabold md:text-5xl">limited offer</h1>
+                    <p class="font-extrabold md:text-3xl">35% OFF on this for the first 30 Customers</p>
+                    <p class="bg-white rounded-xl p-2 text-black w-28">Shop Now <span><i
+                                class="fa-solid fa-arrow-right"></i> </span></p>
+                </div>
+            </section>
+        </div>
+        <!-- news letter section -->
+        <div>
+            <section class="flex flex-col justify-center items-center gap-2">
+                <h1 class="font-extrabold text-xl md:text-6xl">Join our News Letter</h1>
+                <p class="text-xs  mb-3 md:text-4xl">Signup for our email newspaper to get exclusive discounts, updates,
+                    and more</p>
+                <input type="text" class="" style="border: solid black 3px;width:70%;height:50px;">
+                <p class="bg-gray-800 text-white p-2 rounded-lg underline">Subscribe <span><i
+                            class="fa-solid fa-arrow-right"></i>
+                    </span></p>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- footer section -->
+    <div class=" p-10 bg-gray-800 text-white mt-5 ">
+        <section class="flex flex-col gap-3">
+            <h1 class="text-xl font-extrabold md:text-6xl">Nostra</h1>
+            <p class="md:text-4xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those
+                interest</p>
+            <div class="flex gap-16 p-2 md:text-3xl">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <p class="md:text-4xl">@ 2023 Nostra.com</p>
+        </section>
+
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
